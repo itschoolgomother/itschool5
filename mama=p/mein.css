@@ -1,9 +1,10 @@
 body{
-	background-color: lightblue;
+	background-image: url("snow.gif");
+	background-size: 100%;
 }
 p{
 	color: white;
-	font-size: 35px;
+	font-size: 50px;
 	text-align: center;
 	animation: 10s fon infinite;
 }
@@ -29,7 +30,7 @@ p{
 .body{
 width: 150px;
 height:150px;
-background-color:white;
+background-color:lightgray;
 border-radius: 50%;	
 position: absolute;
 top: 150px;
@@ -38,7 +39,7 @@ left: 25px;
 .legs{
 	width: 200px;
 	height: 200px;
-	background-color: white;
+	background-color: lightgray;
 	border-radius: 50%;
 	position: absolute;
 	top:300px;
@@ -46,7 +47,7 @@ left: 25px;
 .head{
 	width: 100px;
 	height: 100px;
-	background-color: white;
+	background-color: lightgray;
 	border-radius: 50%;
 	position: absolute;
 	top: 50px;
@@ -82,7 +83,7 @@ left: 25px;
 .arml{
 	width:100px; 
 	height:10px;
-    background-color: black;
+    background-color: brown;
     position: absolute;
     left: -90px;
     top: 55px;
@@ -92,7 +93,7 @@ left: 25px;
 .armr{
 	width: 100px;
 	height: 10px;
-	background-color: black;
+	background-color: brown;
 	position: absolute;
 	left:140px; 
 	top:55px;
@@ -102,7 +103,7 @@ left: 25px;
 .legl{
 	width: 60px;
 	height: 40px;
-	background-color: white;
+	background-color: lightgray;
 	border-radius: 50%;
 	position: absolute;
 	top: 170px;
@@ -110,9 +111,57 @@ left: 25px;
 .legr{
 	width: 60px;
 	height: 40px;
-	background-color: white;
+	background-color: lightgray;
 	border-radius: 50%;
 	position: absolute;
 	left: 135px;
 	top: 170px;
+}
+.dot1{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    animation: 5s pygovica infinite;
+}
+.dot2{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	left: 70px;
+	top: 120px;
+	animation: 5s pygovica infinite ;
+}
+.dot3{
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	position: absolute;
+	left: 95px;
+	top: 60px;
+	animation: 5s pygovica infinite;
+}
+.dot4{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    left: 102px;
+    top: 115px;
+    animation: 5s pygovica infinite;
+}
+@keyframes pygovica {
+	0%{ background-color: black;}
+    10%{ background-color: gray;} 
+    20%{ background-color: lightgray;}
+    30%{ background-color: white;}
+    40%{ background-color: lightgray;}
+    50%{ background-color: gray;}
+    60%{ background-color: black;}
 }
