@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript">
+	var canvas  = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    canvas.height =600;
+    canvas.width = 1200;
+    var x = prompt("x: ") 
+    var y = prompt("y: ")
+    var w = prompt("w:")  
+    var h = prompt("h:")  
+    var color = prompt("color")
+    ctx.fillStyle = color;
+    ctx.rect(x,y,w,h)
+    var result = confirm('залываем?')
+    if (result==true){ctx.fill()}
+
+
+
+	</script>
+</body>
+</html>
