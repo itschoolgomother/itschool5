@@ -1,2 +1,1 @@
-var name=prompt("Ваше имя?","MARK")
-alert("Hi"+name)
+box.style.widch=100 px  
