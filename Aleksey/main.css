@@ -1,0 +1,21 @@
+body{
+	background-color: black;
+}
+h3{
+	text-align: center;
+	color: white;
+	font-size: 75px;
+}
+p{
+	font-size: 50px;
+	color: #cccccc;
+}
+h3:hover{
+	text-decoration-line: line-through;
+	color: red;
+}
+p:hover{
+	text-decoration-line: line-through;
+	color: white;
+	transform: rotate(30deg);
+}
