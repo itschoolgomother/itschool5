@@ -5,22 +5,69 @@
 
 </head>
 <body>
-<button id="www" onclick="butt()">KNOPKA</button>
 <textarea id="text"></textarea>
+<button id="www" onclick="red()">RED</button>
+<button id="www" onclick="black()">BLACK</button>
+<button id="www" onclick="balance()">balance</button>
 <script type="text/javascript">
-	var text;
-	var p = 10;
-	var s = Math.random()*100;
-	s = Math.round(s);
-	function butt(){
-	p=p-1;
-	text=document.getElementById('text').value
-	document.getElementById('www').style.color = text
-	if (text<s) {alert('Мало')}
-	else if (text>s) {alert('Много')}
-	else if (text==s){alert('FaQ')}
-	if (p==0) {alert('You are dura')}
+var text;
+var money = 1000;
+var fortune = 0;
+
+
+function balance(){
+	alert('У вас: '+money+'$')
 	}
+
+function red(){
+	text=document.getElementById('text').value;
+    fortune = Math.random();
+    fortune = Math.round(fortune);
+
+    if (money<text) {
+	alert("Go ask your mom for money" );}
+	if (money==0) {
+	alert("Yo nigga don't 'ave money" );
+	return;}
+
+    money = money-text;
+	if (fortune==1) {
+    money=text*2 + money;
+    alert('ВЫ ВЫиграли! У вас: '+money+'$')}
+
+	else{alert('ВЫ ЛОХ! У вас: '+money+'$')}
+
+	
+
+	
+	}
+
+
+
+function black(){
+	text=document.getElementById('text').value;
+    fortune = Math.random();
+    fortune = Math.round(fortune);
+
+    if (money<text) {
+	alert("Go ask your mom for money" );}
+	if (money==0) {
+	alert("Yo nigga don't 'ave money" );
+	return;}
+
+    money = money-text;
+	if (fortune==0) {
+    money=text*2 + money;
+    alert('ВЫ ВЫиграли! У вас: '+money+'$')}
+
+	else{alert('ВЫ ЛОХ! У вас: '+money+'$')}
+
+	
+	}
+
+
+
+	
 </script>
 </body>
 </html>

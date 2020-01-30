@@ -1,19 +1,13 @@
-var box = document.getElementById('box');
-var vprs = prompt("Виберете размер и цвет квадрата и радиус","200 blue 50");
-var vp = vprs.split(" ");
-
-console.log(vp)
-
-box.style.width = vp[0] +'px';
-box.style.height = vp[0] +'px';
-box.style.backgroundColor = vp[1];
-box.style.borderRadius = vp[2] + '%';
+var login = prompt("UserName","secret"); 
+var password = prompt("Password","secret");
 
 
 
-
-
-
+if(login == "qwerty" && password == "admin" ||login == "sergey"){
+ 	alert("hi, "+ login)
+}else{
+	alert("Neverno")
+}
 
 
 
