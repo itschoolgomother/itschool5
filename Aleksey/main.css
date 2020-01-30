@@ -1,21 +1,66 @@
 body{
 	background-color: black;
 }
-h3{
-	text-align: center;
-	color: white;
-	font-size: 75px;
+.snowman{
+	width: 250px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 }
-p{
-	font-size: 50px;
-	color: #cccccc;
+.head{
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	background-color: white;
+	position: absolute;
+	left: 80px;
+	top: 90px;
 }
-h3:hover{
-	text-decoration-line: line-through;
-	color: red;
+.oko_left{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	position: absolute;
+	left: 55px;
+	top: 25px;
 }
-p:hover{
-	text-decoration-line: line-through;
-	color: white;
-	transform: rotate(30deg);
+.oko_pravoye{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	position: absolute;
+	left: 25px;
+	top: 25px;
+}
+.carrot{
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+	position: absolute;
+	left: 35px;
+	top: 40px;
+}
+.body{
+		border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color: white;
+	position: absolute;
+	left: 50px;
+	top: 175px;
+}
+.legs{
+		border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	position: absolute;
+	left: 30px;
+	top: 308px;
 }
