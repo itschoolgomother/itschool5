@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="main.css">
 	<title></title>
 </head>
 <body>
-<div class="snowman">
-	<div class="head">
-		<div class="oko_left">
-			
-		</div>
-		<div class="oko_pravoye">
-			
-		</div>
-		<div class="carrot">
-			
-		</div>
-	</div>
-	<div class="body">
-		
-	</div>
-	<div class="legs">
-		
-	</div>
-</div>
+	<canvas id = "canvas"></canvas>
+	<button onclick = 'but()'>Change color</button>
+<script type="text/javascript">
+	var cavans = document.getElementById("canvas");
+	var ctx = canvas.getContext('2d');
+	canvas.width = 500;
+    canvas.height = 500;
+    var x = 50;
+    var y = 50;
+    for(var i = 0;i<41;i++){
+    	ctx.beginPath()
+    	ctx.rect(x,y,50,50);
+    	ctx.fill()
+    	ctx.fillStyle = "green"
+    	x=x+75;
+    if(x>500){
+    	x = 50; y += 75;
+    }
+}
+       function but(){
+       	    for(var i = 0;i<6;i++){
+    	ctx.beginPath()
+    	ctx.rect(x,y,50,50);
+    	ctx.fill()
+    	ctx.fillStyle = "red"
+    	x=x+75;
+    if(x>500){
+    	x = 50; y += 75;
+    }
+}
+</script>
 </body>
 </html>
