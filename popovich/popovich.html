@@ -4,19 +4,39 @@
 	<title></title>
 </head>
 <body>
-<textarea id="tt"></textarea>
-<button onclick="to()">Много бабаг?заходи к нам </button>
-<button onclick="">+$</button>
-<button onclick="">+я красный</button>
-<script type="text/javascript">
-	var k = document.getElementById('tt').value;
-	var m = 1000;
-	var r = Math.random()
-	r = Math.round(r)
-	function to(){
-    alert("У вас:"+money+"$")
-}
-</script>
+	<canvas id="canvas"></canvas>
+	<button onclick="seroga">Вызвать</button>
+<script type="text/javascript"> 
+var canvas= document.getElementById('canvas')
+var ctx = canvas.getContex('2d')
+canvas.width = 1200;
+canvas.height = 600;
+var x = 50;
+var y = 50;
+for(var i = 0<25;i++){
+	seroga()
+	function seroga(){
+    ctx.beginPath()
+    ctx.rect(x,y,50,50);
+    x++75;
+    if (x=350) {
+    	x=50;
+    	y++75;
+    }
+    ctx.fill()
+    function seroga(){
+    	for (var i = 0; i <5;.length; i++)
+        ctx.beginPath()
+        ctx.fillSyle = "blue"
+        ctx.fill()
 
+    
+    	 {
+       		
+    	
+    }
+	}
+    }
+</script>
 </body>
-</html>
+</html>            
