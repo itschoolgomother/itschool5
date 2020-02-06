@@ -2,72 +2,93 @@
 <html>
 <head>
 	<title></title>
-
 </head>
+
 <body>
-<textarea id="text"></textarea>
-<button id="www" onclick="red()">RED</button>
-<button id="www" onclick="black()">BLACK</button>
-<button id="www" onclick="balance()">balance</button>
+	<button onclick="virus()">BUTTON</button>
+<canvas id="canvas"></canvas>
 <script type="text/javascript">
-var text;
-var money = 1000;
-var fortune = 0;
+var canvas = document.getElementById('canvas');
+var ctx = canvas.getContext('2d');
+canvas.width = 500;
+canvas.height = 500;
+var x = 50;
+var y = 50;
+var c = 0;
 
 
-function balance(){
-	alert('У вас: '+money+'$')
+	for(var i = 0; i<25;i++){
+	ctx.beginPath();
+	ctx.rect(x,y,50,50);
+	ctx.fill();
+	x+=75;
+	if (x>400) {
+	y+=75
+	x=50}
 	}
 
-function red(){
-	text=document.getElementById('text').value;
-    fortune = Math.random();
-    fortune = Math.round(fortune);
+	function virus(){
+		if (c<1) {}
+		x = 50;
+	    y = 50;
+		for(var i = 0; i<5;i++){
+		ctx.fillStyle="red";
+		ctx.beginPath();
+		ctx.rect(x,y,50,50);
+		ctx.fill();
+		x+=75;
+		}
 
-    if (money<text) {
-	alert("Go ask your mom for money" );}
-	if (money==0) {
-	alert("Yo nigga don't 'ave money" );
-	return;}
+		if (c>=1) {
+	    y=125;
+	    x=50;}
+	    for(var i = 0; i<5;i++){
+		ctx.fillStyle="blue";
+		ctx.beginPath();
+		ctx.rect(x,y,50,50);
+		ctx.fill();
+		x+=75;
+	    }
 
-    money = money-text;
-	if (fortune==1) {
-    money=text*2 + money;
-    alert('ВЫ ВЫиграли! У вас: '+money+'$')}
+	    if (c>=2) {
+	    y=200;
+	    x=50;}
+	    for(var i = 0; i<5;i++){
+		ctx.fillStyle="green";
+		ctx.beginPath();
+		ctx.rect(x,y,50,50);
+		ctx.fill();
+		x+=75;
+	    }
 
-	else{alert('ВЫ ЛОХ! У вас: '+money+'$')}
+	    if (c>=3) {
+	    y=275;
+	    x=50;}
+	    for(var i = 0; i<5;i++){
+		ctx.fillStyle="purple";
+		ctx.beginPath();
+		ctx.rect(x,y,50,50);
+		ctx.fill();
+		x+=75;
+	    }
 
-	
+	    if (c>=4) {
+	    y=350;
+	    x=50;}
+	    for(var i = 0; i<5;i++){
+		ctx.fillStyle="yellow";
+		ctx.beginPath();
+		ctx.rect(x,y,50,50);
+		ctx.fill();
+		x+=75;
+	    }
 
-	
+	    c=c+1
 	}
-
-
-
-function black(){
-	text=document.getElementById('text').value;
-    fortune = Math.random();
-    fortune = Math.round(fortune);
-
-    if (money<text) {
-	alert("Go ask your mom for money" );}
-	if (money==0) {
-	alert("Yo nigga don't 'ave money" );
-	return;}
-
-    money = money-text;
-	if (fortune==0) {
-    money=text*2 + money;
-    alert('ВЫ ВЫиграли! У вас: '+money+'$')}
-
-	else{alert('ВЫ ЛОХ! У вас: '+money+'$')}
-
 	
-	}
-
-
-
 	
+
+
 </script>
 </body>
 </html>
