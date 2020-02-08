@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Something went wrong way</title>
+</head>
+<body style="height: 2000px;">
+	<style type="text/css">
+		#div {width: 100px;height: 100px; background-color: red; position: fixed;left:0px}
+	</style>
+	<div id = 'div'></div>
+<script type="text/javascript">
+	var alex1 = 'alex is the best';
+	alert(alex1);
+	function alex(){
+		alert(alex1+ ', but who knows?' )
+	}
+	window.addEventListener('keyup', alex)
+
+	//something another
+		window.addEventListener('scroll', function(){
+		document.getElementById('div').style.width = pageYOffset*3.9+'px';
+		document.getElementById('div').style.height = pageYOffset*3.9+'px';}
+	);
+
+
+</script>
+</body>
+</html>

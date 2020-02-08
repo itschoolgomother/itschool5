@@ -14,6 +14,8 @@
 border-radius: 50% 47%; 
 border: solid black 3px;
 box-shadow: inset 17px 0px 3px 0px #f1f1f1;
+position: absolute;
+z-index:1;
 }
 .body{
 	width: 160px;
@@ -23,7 +25,58 @@ box-shadow: inset 17px 0px 3px 0px #f1f1f1;
 	border-radius: 90% 90% 70% 70%;
 	box-shadow: inset 12px -8px 3px 0px #f1f1f1;
 position: absolute;
-top: 145px;
+top: 130px;
 left: 5px;
+
+}
+.legl{
+	width: 50px;
+	height: 80px;
+	background-color: black;
+	border-radius: 40% 50% 40% 50%;
+	position: absolute;
+	top: 180px;
+	left: 20px;
+	z-index:-1;
+}
+.legr{
+	width: 50px;
+	height: 80px;
+	background-color: black;
+	border-radius: 50% 90% 80% 70%;
+	position: absolute;
+	top: 180px;
+	left: 90px;
+	z-index: -1;
+}
+.arml{
+width: 50px;
+height: 110px;
+background-color: black;
+border-radius: 90% 60% 70% 70%;
+position: absolute;
+left: -10px;
+top: 6px;
 z-index: -1;
+ }
+ .armr{
+ 	width: 45px;
+ 	height: 80px;
+ 	background-color: black;
+ 	border-radius: 50% 90% 80% 70%;
+ 	position: absolute;
+ 	left: 133px;
+ 	top: -4px;
+ 	transform: rotate(110deg);
+ 	z-index: -1;
+}
+.chunk-arm{
+width:45px; 
+height:80px;
+background-color: black;
+border-radius: 50% 90% 80% 70%;
+position: absolute;
+left: 170px;
+transform: rotate(25deg);
+top: -20px;
 }
