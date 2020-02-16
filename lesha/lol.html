@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lol</title>
+</head>
+<body>
+<div id="lol"><button id="baton"></button><button id="baton2"></button></div>
+<style type="text/css">
+	#lol {
+		height: 100px;
+		width: 1900px;
+		background-color: gray;
+		position: absolute;
+		top: 0px;
+		animation: ani 2s 1;
+	}
+	@keyframes ani {
+		from{top: -200px;}
+		to{top: 0px;}
+	}
+	@keyframes anii {
+		from{top: 0px;}
+		to{top: -200px;}
+	}
+
+
+	#baton{
+		height: 80px;
+		width: 300px;
+		margin-right: 200px;
+		margin-left: 200px;
+		opacity: 0.1;
+	}
+	#baton2{
+		height: 80px;
+		width: 300px;
+		margin-left: 500px;
+		margin: 5.9px;
+		opacity: 0.1;
+	}
+</style>
+<script type="text/javascript">
+	document.addEventListener('click', meny);
+	var k = -1;
+	function meny(){
+		if (k>0) {
+		document.getElementById('lol').style.animation = "ani 2s 1"
+	}
+	else{
+		document.getElementById('lol').style.animation = "anii 2s 1"
+	}
+k=-k
+	}
+</script>
+</body>
+</html>

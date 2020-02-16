@@ -1,3 +1,15 @@
+body{
+	background-color: orangered;
+	animation: 3s changecolor infinite;
+}
+@keyframes changecolor{
+	0%{background-color: red;}
+	25%{background-color: blue;}
+	50%{background-color: yellow;}
+	75%{background-color: orange;}
+	100%{background-color: green;}
+}
+
 .panda{
 	width: 170px;
 	height: 400px;
@@ -79,4 +91,40 @@ position: absolute;
 left: 170px;
 transform: rotate(25deg);
 top: -20px;
+}
+.earl{
+	width: 70px;
+	height: 70px;
+	background-color: black;
+	border-radius: 70% 80% 70% 70%;
+	position:absolute;
+	top: -25px;
+	left: -5px;
+	z-index: -99;
+}
+.earr{
+	width: 70px;
+	height: 70px;
+	background-color: black;
+	border-radius: 70% 80% 70% 70%;
+	position: absolute;
+	top: -30px;
+	left: 100px;
+	z-index: -99;
+}
+.mouth{
+	width: 20px;
+	height: 15px;
+	background-color: red;
+	border-radius: 50%;
+	position:absolute;
+	top: 120px;
+	left: 73px;
+}
+.nouse{
+	width: 50px;
+	height: 10px;
+	border-color: black;
+	border-radius: 40%
+
 }
